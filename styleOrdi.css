@@ -1,0 +1,12 @@
+body{
+    background-color: #f6e07baf;
+}
+.datos{
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: auto;
+}
+tr{
+    background: #999898;
+}

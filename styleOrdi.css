@@ -10,3 +10,6 @@ body{
 tr{
     background: #999898;
 }
+label{
+    font-weight: bold;
+}

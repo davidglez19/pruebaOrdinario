@@ -19,5 +19,9 @@ function Calcular() {
     document.getElementById("total").value = total;
 }
 function Almacenar() {
-
+    var valorCajas = document.getElementsByTagName("input");
+    for(var i=0;i<valorCajas.length;i++) {
+        // console.log(valorCajas[i].value);
+        
+    }
 }

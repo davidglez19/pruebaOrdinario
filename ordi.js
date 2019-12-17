@@ -1,6 +1,8 @@
 var code = new Array(125,415,209);
 var description = new Array('Memoria UBS 16GB','Monitor 16 pulg','Mouse inalambrico');
 var price = new Array(140,2050,380);
+var tbody = document.getElementsByTagName("tbody")[0];
+console.log(tbody);
 function buscar() {
     var buscar = parseInt(document.getElementById("codigo").value);
     var posicion = code.indexOf(buscar);

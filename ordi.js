@@ -1,7 +1,7 @@
 var code = new Array(125,415,209);
 var description = new Array('Memoria UBS 16GB','Monitor 16 pulg','Mouse inalambrico');
 var price = new Array(140,2050,380);
-var tbody = document.getElementsByTagName("tbody")[0];
+var tbody = document.getElementsByTagName("tbody");
 console.log(tbody);
 function buscar() {
     var buscar = parseInt(document.getElementById("codigo").value);
@@ -22,8 +22,17 @@ function Calcular() {
 }
 function Almacenar() {
     var valorCajas = document.getElementsByTagName("input");
+    var filas = document.createElement("tr");
+    var columnas = document.createElement("td");
     for(var i=0;i<valorCajas.length;i++) {
-        // console.log(valorCajas[i].value);
-        
+        var valoresCajas = document.createTextNode(valorCajas[i].value);
+        console.log(valoresCajas);
+        columnas.appendChild(valoresCajas);
+        console.log(columnas);
+        // console.log(columnas);
+        // filas.appendChild(columnas);
+        // tbody[0].appendChild(filas);
     }
+    
+    
 }

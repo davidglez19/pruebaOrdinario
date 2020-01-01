@@ -23,16 +23,15 @@ function Calcular() {
 function Almacenar() {
     var valorCajas = document.getElementsByTagName("input");
     var filas = document.createElement("tr");
-    var columnas = document.createElement("td");
+    
     for(var i=0;i<valorCajas.length;i++) {
+        var columnas = document.createElement("td");
         var valoresCajas = document.createTextNode(valorCajas[i].value);
-        console.log(valoresCajas);
+        // console.log(valoresCajas);
         columnas.appendChild(valoresCajas);
-        console.log(columnas);
+        filas.appendChild(columnas);
+        // console.log(filas);
         // console.log(columnas);
-        // filas.appendChild(columnas);
-        // tbody[0].appendChild(filas);
-    }
-    
-    
+        tbody[0].appendChild(filas);
+    } 
 }

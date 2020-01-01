@@ -12,4 +12,6 @@ tr{
 }
 label{
     font-weight: bold;
+    color: blue;
+    letter-spacing: 4px;
 }
